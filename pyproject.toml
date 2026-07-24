@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sol-pump-monitor"
+version = "0.2.1"
+description = "Off-grid solar well pump monitor and dry-run alerting daemon"
+authors = [
+    { name = "Luke Sanders" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0",
+    "httpx>=0.24.0",
+    "pyserial-asyncio>=0.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+]
+
+[project.scripts]
+sol-pump = "sol_pump_monitor.cli:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
