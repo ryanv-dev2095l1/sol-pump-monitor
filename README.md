@@ -43,3 +43,5 @@ sol-pump-monitor check
 ## Systemd
 
 A unit file template is in `contrib/sol-pump-monitor.service` if you want to run it on a Pi or gateway.
+
+<!-- last-sync: 2026-09-08 -->
