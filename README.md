@@ -44,4 +44,4 @@ sol-pump-monitor check
 
 A unit file template is in `contrib/sol-pump-monitor.service` if you want to run it on a Pi or gateway.
 
-<!-- last-sync: 2026-09-09 -->
+<!-- last-sync: 2026-09-10 -->
